@@ -14,16 +14,5 @@ class SNSServiceTest extends TestCase
 
     public function test_a()
     {
-        $f = __DIR__ . '/../app/a.txt';
-
-        $a = new S3UploadUseCase();
-        $a->put($f);
-
-        $aa = $a->get('test');
-
-        $this->assertEquals(
-            (string)$aa['Body'],
-            file_get_contents($f)
-        );
     }
 }

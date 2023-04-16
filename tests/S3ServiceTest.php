@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use App\S3UploadUseCase;
+use App\S3Service;
 use PHPUnit\Framework\TestCase;
 
 class S3ServiceTest extends TestCase
@@ -16,7 +16,7 @@ class S3ServiceTest extends TestCase
     {
         $f = __DIR__ . '/../app/a.txt';
 
-        $a = new S3UploadUseCase();
+        $a = new S3Service();
         $a->put($f);
 
         $aa = $a->get('test');

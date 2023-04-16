@@ -2,7 +2,6 @@
 
 namespace Tests;
 
-use App\S3UploadUseCase;
 use PHPUnit\Framework\TestCase;
 
 class SNSServiceTest extends TestCase
@@ -14,5 +13,6 @@ class SNSServiceTest extends TestCase
 
     public function test_a()
     {
+        $this->assertEquals(true, 1 > 0);
     }
 }
